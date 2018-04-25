@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="xxpay-master">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay-common/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay-dal/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay-mgr/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay-shop/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4dubbo/xxpay4dubbo-api/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4dubbo/xxpay4dubbo-service/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4dubbo/xxpay4dubbo-service/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4dubbo/xxpay4dubbo-web/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4spring-boot/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4spring-cloud/xxpay-config/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4spring-cloud/xxpay-gateway/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4spring-cloud/xxpay-server/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4spring-cloud/xxpay-service/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4spring-cloud/xxpay-service/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/xxpay4spring-cloud/xxpay-web/src/main/java"/>
+        <property name="context-root" value="xxpay-master"/>
+        <property name="java-output-path" value="/xxpay-master/bin"/>
+    </wb-module>
+</project-modules>

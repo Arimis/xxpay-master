@@ -178,7 +178,7 @@ function lock($, layer) {
                 var $lockBox = $('div#lock-box');
 
                 var userName = $lockBox.find('input[name=username]').val();
-                var pwd = $lockBox.find('input[name=password]').val();
+                var pwd = $lockBox.find('input[name=lockPwd]').val();
                 if (pwd === '输入密码解锁..' || pwd.length === 0) {
                     layer.msg('请输入密码..', {
                         icon: 2,

@@ -6,8 +6,8 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/xxpaydb?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
-    username: xxpay
-    password: xxpay
+    username: root
+    password: 123456
     initialSize: 5    # 初始化大小
     minIdle: 5        # 最小
     maxActive: 20     # 最大
@@ -32,7 +32,7 @@ spring:
     broker-url: failover:(tcp://127.0.0.1:61616?wireFormat.maxInactivityDuration=0)
     in-memory: true
     pool:
-      enabled: true # 如果此处设置为true，需要加activemq-pool依赖包，否则会自动配置失败，报JmsMessagingTemplate注入失败
+      enabled: false # 如果此处设置为true，需要加activemq-pool依赖包，否则会自动配置失败，报JmsMessagingTemplate注入失败
 
   rabbitmq:
     addresses: 127.0.0.1:5672

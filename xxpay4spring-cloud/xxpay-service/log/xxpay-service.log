@@ -1,0 +1,1044 @@
+2018-04-24 19:11:25.047  INFO 26404 --- [main] org.xxpay.XxPayServiceApplication        : The following profiles are active: prod
+2018-04-24 19:11:25.086  INFO 26404 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d17d80: startup date [Tue Apr 24 19:11:25 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@58a9760d
+2018-04-24 19:11:28.077  INFO 26404 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1564fcc1-1ec4-319a-9654-b1602c89e6ee
+2018-04-24 19:11:28.107  INFO 26404 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 19:11:28.407  INFO 26404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$54bdc3f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 19:11:28.463  INFO 26404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$38a3c0f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 19:11:28.943  INFO 26404 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 3000 (http)
+2018-04-24 19:11:28.959  INFO 26404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-24 19:11:28.961  INFO 26404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-04-24 19:11:29.134  INFO 26404 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-24 19:11:29.138  INFO 26404 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4053 ms
+2018-04-24 19:11:29.415  INFO 26404 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-24 19:11:29.423  INFO 26404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-24 19:11:29.424  INFO 26404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-24 19:11:29.424  INFO 26404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-24 19:11:29.425  INFO 26404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-24 19:11:30.412  INFO 26404 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-04-24 19:11:31.889  WARN 26404 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 19:11:31.890  INFO 26404 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 19:11:31.900  WARN 26404 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 19:11:31.900  INFO 26404 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 19:11:32.212  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d17d80: startup date [Tue Apr 24 19:11:25 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@58a9760d
+2018-04-24 19:11:32.287  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mch_info/select]}" onto public java.lang.String org.xxpay.service.controller.MchInfoServiceController.selectMchInfo(java.lang.String)
+2018-04-24 19:11:32.288  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/aliPayNotifyRes.htm]}" onto public void org.xxpay.service.controller.Notify4AliPayController.aliPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 19:11:32.289  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/wxPayNotifyRes.htm]}" onto public java.lang.String org.xxpay.service.controller.Notify4WxPayController.wxPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 19:11:32.290  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_mobile]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayMobileReq(java.lang.String)
+2018-04-24 19:11:32.290  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_qr]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayQrReq(java.lang.String)
+2018-04-24 19:11:32.290  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_wap]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayWapReq(java.lang.String)
+2018-04-24 19:11:32.291  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_pc]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayPcReq(java.lang.String)
+2018-04-24 19:11:32.291  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/wx]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4WxController.doWxPayReq(java.lang.String)
+2018-04-24 19:11:32.292  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay_channel/select]}" onto public java.lang.String org.xxpay.service.controller.PayChannelServiceController.selectPayChannel(java.lang.String)
+2018-04-24 19:11:32.292  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/query]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.queryPayOrder(java.lang.String)
+2018-04-24 19:11:32.293  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/create]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.createPayOrder(java.lang.String)
+2018-04-24 19:11:32.295  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-24 19:11:32.296  INFO 26404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-24 19:11:32.358  INFO 26404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:11:32.358  INFO 26404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:11:32.415  INFO 26404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:11:33.685  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-04-24 19:11:33.698  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-04-24 19:11:33.784  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-24 19:11:33.786  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-24 19:11:33.800  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-24 19:11:33.802  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-24 19:11:33.803  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-24 19:11:33.811  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-24 19:11:33.838  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-24 19:11:33.856  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=38d17d80,type=ConfigurationPropertiesRebinder]
+2018-04-24 19:11:33.865  INFO 26404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-24 19:11:34.163  INFO 26404 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-24 19:11:34.169  INFO 26404 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-24 19:11:34.183  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-24 19:11:34.191  INFO 26404 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-24 19:11:34.191  INFO 26404 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-24 19:11:34.191  INFO 26404 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-24 19:11:34.192  INFO 26404 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-24 19:11:34.250  INFO 26404 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-24 19:11:34.252  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-24 19:11:34.252  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-24 19:11:34.252  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-24 19:11:34.252  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-24 19:11:34.253  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-24 19:11:34.253  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-24 19:11:34.253  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-24 19:11:34.261  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-24 19:11:34.263  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-24 19:11:34.270  INFO 26404 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-24 19:11:34.274  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1524568294274 with initial instances count: 1
+2018-04-24 19:11:34.323  INFO 26404 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application xxpay-service with eureka with status UP
+2018-04-24 19:11:34.324  INFO 26404 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1524568294324, current=UP, previous=STARTING]
+2018-04-24 19:11:34.328  INFO 26404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/172.16.3.1:xxpay-service:3000: registering service...
+2018-04-24 19:11:34.329  INFO 26404 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-24 19:11:34.479  INFO 26404 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/172.16.3.1:xxpay-service:3000 - registration status: 204
+2018-04-24 19:11:34.768  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully connected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:11:40.074  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41472] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:11:40.105  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:11:45.118  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41474] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:11:45.151  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:11:50.161  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41478] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:11:50.193  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:11:55.203  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41484] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:11:55.239  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:00.252  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41490] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:00.284  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:05.296  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41492] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:05.337  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:10.346  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41498] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:10.374  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:15.385  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41500] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:15.420  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:20.431  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41504] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:20.463  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:25.472  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41506] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:25.504  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:30.514  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41508] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:30.547  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:35.557  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41510] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:35.588  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:40.597  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41516] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:40.630  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:45.641  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41518] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:45.676  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:50.687  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41524] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:50.720  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:12:55.733  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41534] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:12:55.768  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:00.779  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41536] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:00.806  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:05.815  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41542] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:05.848  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:10.858  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41548] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:10.887  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:15.897  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41550] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:15.948  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:20.957  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41554] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:20.992  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:26.003  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41562] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:26.032  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:31.042  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41566] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:31.072  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:36.083  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41568] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:36.114  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:41.122  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41578] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:41.151  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:46.165  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41580] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:46.194  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:51.203  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41584] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:51.231  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:13:56.242  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41586] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:13:56.272  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:14:01.281  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41588] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:14:01.310  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:14:06.321  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41590] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:14:06.349  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:14:11.358  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41596] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:14:11.386  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:14:16.396  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41598] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:14:16.425  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:14:21.434  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41602] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:14:21.466  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:14:26.476  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41604] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:14:26.506  INFO 26404 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:14:31.517  WARN 26404 --- [ActiveMQ Transport: tcp:///193.112.45.135:61613@41610] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_141]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_141]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.io.DataInputStream.readInt(DataInputStream.java:387) ~[na:1.8.0_141]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:14:31.546  INFO 26404 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Successfully reconnected to tcp://193.112.45.135:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 19:14:54.488  INFO 26600 --- [main] org.xxpay.XxPayServiceApplication        : The following profiles are active: prod
+2018-04-24 19:14:54.526  INFO 26600 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d17d80: startup date [Tue Apr 24 19:14:54 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@58a9760d
+2018-04-24 19:14:56.574  INFO 26600 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1564fcc1-1ec4-319a-9654-b1602c89e6ee
+2018-04-24 19:14:56.593  INFO 26600 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 19:14:56.729  INFO 26600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$54bdc3f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 19:14:56.748  INFO 26600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$38a3c0f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 19:14:57.222  INFO 26600 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 3000 (http)
+2018-04-24 19:14:57.242  INFO 26600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-24 19:14:57.244  INFO 26600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-04-24 19:14:57.424  INFO 26600 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-24 19:14:57.424  INFO 26600 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2899 ms
+2018-04-24 19:14:57.719  INFO 26600 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-24 19:14:57.729  INFO 26600 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-24 19:14:57.730  INFO 26600 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-24 19:14:57.731  INFO 26600 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-24 19:14:57.731  INFO 26600 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-24 19:14:58.618  INFO 26600 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-04-24 19:14:59.591  WARN 26600 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 19:14:59.592  INFO 26600 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 19:14:59.600  WARN 26600 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 19:14:59.600  INFO 26600 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 19:14:59.867  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d17d80: startup date [Tue Apr 24 19:14:54 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@58a9760d
+2018-04-24 19:14:59.964  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mch_info/select]}" onto public java.lang.String org.xxpay.service.controller.MchInfoServiceController.selectMchInfo(java.lang.String)
+2018-04-24 19:14:59.966  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/aliPayNotifyRes.htm]}" onto public void org.xxpay.service.controller.Notify4AliPayController.aliPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 19:14:59.967  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/wxPayNotifyRes.htm]}" onto public java.lang.String org.xxpay.service.controller.Notify4WxPayController.wxPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 19:14:59.968  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_wap]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayWapReq(java.lang.String)
+2018-04-24 19:14:59.968  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_pc]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayPcReq(java.lang.String)
+2018-04-24 19:14:59.969  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_mobile]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayMobileReq(java.lang.String)
+2018-04-24 19:14:59.969  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_qr]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayQrReq(java.lang.String)
+2018-04-24 19:14:59.970  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/wx]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4WxController.doWxPayReq(java.lang.String)
+2018-04-24 19:14:59.971  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay_channel/select]}" onto public java.lang.String org.xxpay.service.controller.PayChannelServiceController.selectPayChannel(java.lang.String)
+2018-04-24 19:14:59.972  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/create]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.createPayOrder(java.lang.String)
+2018-04-24 19:14:59.973  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/query]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.queryPayOrder(java.lang.String)
+2018-04-24 19:14:59.975  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-24 19:14:59.980  INFO 26600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-24 19:15:00.020  INFO 26600 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:15:00.020  INFO 26600 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:15:00.063  INFO 26600 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:15:00.670  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-04-24 19:15:00.683  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-04-24 19:15:00.750  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-24 19:15:00.752  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-24 19:15:00.763  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-24 19:15:00.765  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-24 19:15:00.766  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-24 19:15:00.769  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-24 19:15:00.787  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-24 19:15:00.802  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=38d17d80,type=ConfigurationPropertiesRebinder]
+2018-04-24 19:15:00.811  INFO 26600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-24 19:15:01.161  INFO 26600 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-24 19:15:01.170  INFO 26600 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-24 19:15:01.187  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-24 19:15:01.194  INFO 26600 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-24 19:15:01.195  INFO 26600 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-24 19:15:01.195  INFO 26600 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-24 19:15:01.196  INFO 26600 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-24 19:15:01.286  INFO 26600 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-24 19:15:01.289  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-24 19:15:01.290  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-24 19:15:01.290  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-24 19:15:01.290  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-24 19:15:01.290  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-24 19:15:01.290  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-24 19:15:01.290  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-24 19:15:01.298  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-24 19:15:01.305  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-24 19:15:01.310  INFO 26600 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-24 19:15:01.312  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1524568501312 with initial instances count: 2
+2018-04-24 19:15:01.367  INFO 26600 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application xxpay-service with eureka with status UP
+2018-04-24 19:15:01.368  INFO 26600 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1524568501368, current=UP, previous=STARTING]
+2018-04-24 19:15:01.370  INFO 26600 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/172.16.3.1:xxpay-service:3000: registering service...
+2018-04-24 19:15:01.371  INFO 26600 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-24 19:15:01.439  INFO 26600 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/172.16.3.1:xxpay-service:3000 - registration status: 204
+2018-04-24 19:15:06.828  WARN 26600 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Failed to connect to [tcp://193.112.45.135:61617?wireFormat.maxInactivityDuration=0] after: 10 attempt(s) continuing to retry.
+2018-04-24 19:16:38.315  INFO 26698 --- [main] org.xxpay.XxPayServiceApplication        : The following profiles are active: prod
+2018-04-24 19:16:38.335  INFO 26698 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d17d80: startup date [Tue Apr 24 19:16:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@58a9760d
+2018-04-24 19:16:40.126  INFO 26698 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1564fcc1-1ec4-319a-9654-b1602c89e6ee
+2018-04-24 19:16:40.150  INFO 26698 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 19:16:40.293  INFO 26698 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$54bdc3f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 19:16:40.325  INFO 26698 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$38a3c0f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 19:16:40.779  INFO 26698 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 3000 (http)
+2018-04-24 19:16:40.796  INFO 26698 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-24 19:16:40.797  INFO 26698 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-04-24 19:16:40.995  INFO 26698 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-24 19:16:40.996  INFO 26698 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2661 ms
+2018-04-24 19:16:41.328  INFO 26698 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-24 19:16:41.336  INFO 26698 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-24 19:16:41.338  INFO 26698 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-24 19:16:41.338  INFO 26698 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-24 19:16:41.338  INFO 26698 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-24 19:16:42.017  INFO 26698 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-04-24 19:16:42.952  WARN 26698 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 19:16:42.953  INFO 26698 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 19:16:42.965  WARN 26698 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 19:16:42.966  INFO 26698 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 19:16:43.283  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38d17d80: startup date [Tue Apr 24 19:16:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@58a9760d
+2018-04-24 19:16:43.388  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mch_info/select]}" onto public java.lang.String org.xxpay.service.controller.MchInfoServiceController.selectMchInfo(java.lang.String)
+2018-04-24 19:16:43.390  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/aliPayNotifyRes.htm]}" onto public void org.xxpay.service.controller.Notify4AliPayController.aliPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 19:16:43.391  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/wxPayNotifyRes.htm]}" onto public java.lang.String org.xxpay.service.controller.Notify4WxPayController.wxPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 19:16:43.392  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_wap]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayWapReq(java.lang.String)
+2018-04-24 19:16:43.392  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_pc]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayPcReq(java.lang.String)
+2018-04-24 19:16:43.393  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_mobile]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayMobileReq(java.lang.String)
+2018-04-24 19:16:43.393  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_qr]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayQrReq(java.lang.String)
+2018-04-24 19:16:43.394  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/wx]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4WxController.doWxPayReq(java.lang.String)
+2018-04-24 19:16:43.394  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay_channel/select]}" onto public java.lang.String org.xxpay.service.controller.PayChannelServiceController.selectPayChannel(java.lang.String)
+2018-04-24 19:16:43.395  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/create]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.createPayOrder(java.lang.String)
+2018-04-24 19:16:43.396  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/query]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.queryPayOrder(java.lang.String)
+2018-04-24 19:16:43.398  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-24 19:16:43.399  INFO 26698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-24 19:16:43.446  INFO 26698 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:16:43.446  INFO 26698 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:16:43.530  INFO 26698 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 19:16:44.469  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-04-24 19:16:44.483  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-04-24 19:16:44.578  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-24 19:16:44.580  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-24 19:16:44.601  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-24 19:16:44.603  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-24 19:16:44.608  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-24 19:16:44.613  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-24 19:16:44.634  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-24 19:16:44.654  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=38d17d80,type=ConfigurationPropertiesRebinder]
+2018-04-24 19:16:44.673  INFO 26698 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-24 19:16:45.080  INFO 26698 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-24 19:16:45.086  INFO 26698 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-24 19:16:45.102  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-24 19:16:45.109  INFO 26698 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-24 19:16:45.109  INFO 26698 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-24 19:16:45.109  INFO 26698 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-24 19:16:45.110  INFO 26698 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-24 19:16:45.197  INFO 26698 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-24 19:16:45.199  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-24 19:16:45.199  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-24 19:16:45.199  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-24 19:16:45.199  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-24 19:16:45.199  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-24 19:16:45.199  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-24 19:16:45.199  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-24 19:16:45.207  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-24 19:16:45.209  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-24 19:16:45.217  INFO 26698 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-24 19:16:45.221  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1524568605221 with initial instances count: 2
+2018-04-24 19:16:45.300  INFO 26698 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application xxpay-service with eureka with status UP
+2018-04-24 19:16:45.302  INFO 26698 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1524568605302, current=UP, previous=STARTING]
+2018-04-24 19:16:45.309  INFO 26698 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/172.16.3.1:xxpay-service:3000: registering service...
+2018-04-24 19:16:45.318  INFO 26698 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-24 19:16:45.446  INFO 26698 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/172.16.3.1:xxpay-service:3000 - registration status: 204
+2018-04-24 19:16:45.659  INFO 26698 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully connected to tcp://193.112.45.135:61623?wireFormat.maxInactivityDuration=0
+2018-04-24 19:16:45.691  WARN 26698 --- [ActiveMQ Transport: tcp:///193.112.45.135:61623@41354] o.a.a.t.failover.FailoverTransport       : Transport (tcp://193.112.45.135:61623?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.io.IOException: Unknown data type: 47
+	at org.apache.activemq.openwire.OpenWireFormat.doUnmarshal(OpenWireFormat.java:359) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:278) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215) ~[activemq-client-5.14.5.jar:5.14.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_141]
+
+2018-04-24 19:16:56.095  WARN 26698 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Failed to connect to [tcp://193.112.45.135:61623?wireFormat.maxInactivityDuration=0] after: 10 attempt(s) continuing to retry.
+2018-04-24 23:25:13.997  INFO 29285 --- [main] org.xxpay.XxPayServiceApplication        : The following profiles are active: prod
+2018-04-24 23:25:14.016  INFO 29285 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f353d99: startup date [Tue Apr 24 23:25:14 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1e66f1f5
+2018-04-24 23:25:16.786  INFO 29285 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1564fcc1-1ec4-319a-9654-b1602c89e6ee
+2018-04-24 23:25:16.817  INFO 29285 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 23:25:17.082  INFO 29285 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1ffc1d72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 23:25:17.103  INFO 29285 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3e21a75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 23:25:17.917  INFO 29285 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 3000 (http)
+2018-04-24 23:25:17.961  INFO 29285 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-24 23:25:17.964  INFO 29285 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-04-24 23:25:18.287  INFO 29285 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-24 23:25:18.291  INFO 29285 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4275 ms
+2018-04-24 23:25:18.951  INFO 29285 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-24 23:25:18.962  INFO 29285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-24 23:25:18.968  INFO 29285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-24 23:25:18.969  INFO 29285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-24 23:25:18.970  INFO 29285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-24 23:25:19.888  INFO 29285 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-04-24 23:25:21.303  WARN 29285 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 23:25:21.303  INFO 29285 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 23:25:21.320  WARN 29285 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 23:25:21.321  INFO 29285 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 23:25:21.632  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f353d99: startup date [Tue Apr 24 23:25:14 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1e66f1f5
+2018-04-24 23:25:21.739  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mch_info/select]}" onto public java.lang.String org.xxpay.service.controller.MchInfoServiceController.selectMchInfo(java.lang.String)
+2018-04-24 23:25:21.741  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/aliPayNotifyRes.htm]}" onto public void org.xxpay.service.controller.Notify4AliPayController.aliPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 23:25:21.744  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/wxPayNotifyRes.htm]}" onto public java.lang.String org.xxpay.service.controller.Notify4WxPayController.wxPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 23:25:21.745  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_pc]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayPcReq(java.lang.String)
+2018-04-24 23:25:21.746  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_mobile]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayMobileReq(java.lang.String)
+2018-04-24 23:25:21.747  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_qr]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayQrReq(java.lang.String)
+2018-04-24 23:25:21.748  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_wap]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayWapReq(java.lang.String)
+2018-04-24 23:25:21.749  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/wx]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4WxController.doWxPayReq(java.lang.String)
+2018-04-24 23:25:21.749  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay_channel/select]}" onto public java.lang.String org.xxpay.service.controller.PayChannelServiceController.selectPayChannel(java.lang.String)
+2018-04-24 23:25:21.750  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/create]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.createPayOrder(java.lang.String)
+2018-04-24 23:25:21.752  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/query]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.queryPayOrder(java.lang.String)
+2018-04-24 23:25:21.756  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-24 23:25:21.759  INFO 29285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-24 23:25:21.851  INFO 29285 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 23:25:21.852  INFO 29285 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 23:25:21.910  INFO 29285 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 23:25:22.901  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-04-24 23:25:22.932  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-04-24 23:25:23.084  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-24 23:25:23.086  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-24 23:25:23.122  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-24 23:25:23.134  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-24 23:25:23.135  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-24 23:25:23.141  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-24 23:25:23.185  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-24 23:25:23.220  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7f353d99,type=ConfigurationPropertiesRebinder]
+2018-04-24 23:25:23.248  INFO 29285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-24 23:25:23.759  INFO 29285 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-24 23:25:23.779  INFO 29285 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-24 23:25:23.804  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-24 23:25:23.812  INFO 29285 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-24 23:25:23.812  INFO 29285 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-24 23:25:23.813  INFO 29285 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-24 23:25:23.815  INFO 29285 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-24 23:25:23.967  INFO 29285 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-24 23:25:23.969  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-24 23:25:23.969  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-24 23:25:23.969  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-24 23:25:23.970  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-24 23:25:23.970  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-24 23:25:23.971  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-24 23:25:23.971  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-24 23:25:23.985  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-24 23:25:23.989  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-24 23:25:24.000  INFO 29285 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-24 23:25:24.004  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1524583524004 with initial instances count: 1
+2018-04-24 23:25:24.075  INFO 29285 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application xxpay-service with eureka with status UP
+2018-04-24 23:25:24.079  INFO 29285 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1524583524079, current=UP, previous=STARTING]
+2018-04-24 23:25:24.084  INFO 29285 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/192.168.0.104:xxpay-service:3000: registering service...
+2018-04-24 23:25:24.088  INFO 29285 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-24 23:25:24.168  INFO 29285 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/192.168.0.104:xxpay-service:3000 - registration status: 204
+2018-04-24 23:25:24.354  INFO 29285 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully connected to tcp://127.0.0.1:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 23:25:34.373  WARN 29285 --- [main] o.a.a.t.failover.FailoverTransport       : Transport (tcp://127.0.0.1:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.io.IOException: Wire format negotiation timeout: peer did not send his wire format.
+	at org.apache.activemq.transport.WireFormatNegotiator.oneway(WireFormatNegotiator.java:99) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.failover.FailoverTransport.oneway(FailoverTransport.java:668) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:68) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:86) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1388) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.ActiveMQConnection.ensureConnectionInfoSent(ActiveMQConnection.java:1478) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.ActiveMQConnection.start(ActiveMQConnection.java:527) [activemq-client-5.14.5.jar:5.14.5]
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.startSharedConnection(AbstractJmsListeningContainer.java:450) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer.startSharedConnection(DefaultMessageListenerContainer.java:822) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.doStart(AbstractJmsListeningContainer.java:297) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.start(AbstractJmsListeningContainer.java:270) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer.start(DefaultMessageListenerContainer.java:598) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.config.JmsListenerEndpointRegistry.startIfNecessary(JmsListenerEndpointRegistry.java:243) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.config.JmsListenerEndpointRegistry.start(JmsListenerEndpointRegistry.java:206) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:175) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:50) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:348) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:151) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:114) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:880) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.xxpay.XxPayServiceApplication.main(XxPayServiceApplication.java:19) [classes/:na]
+
+2018-04-24 23:25:48.207  INFO 29353 --- [main] org.xxpay.XxPayServiceApplication        : The following profiles are active: prod
+2018-04-24 23:25:48.226  INFO 29353 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f353d99: startup date [Tue Apr 24 23:25:48 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1e66f1f5
+2018-04-24 23:25:50.268  INFO 29353 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1564fcc1-1ec4-319a-9654-b1602c89e6ee
+2018-04-24 23:25:50.287  INFO 29353 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-24 23:25:50.410  INFO 29353 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1ffc1d72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 23:25:50.445  INFO 29353 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3e21a75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-24 23:25:51.167  INFO 29353 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 3000 (http)
+2018-04-24 23:25:51.190  INFO 29353 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-24 23:25:51.192  INFO 29353 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-04-24 23:25:51.456  INFO 29353 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-24 23:25:51.457  INFO 29353 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3231 ms
+2018-04-24 23:25:51.890  INFO 29353 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-24 23:25:51.898  INFO 29353 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-24 23:25:51.900  INFO 29353 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-24 23:25:51.900  INFO 29353 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-24 23:25:51.900  INFO 29353 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-24 23:25:52.878  INFO 29353 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-04-24 23:25:54.692  WARN 29353 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 23:25:54.692  INFO 29353 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 23:25:54.719  WARN 29353 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-24 23:25:54.722  INFO 29353 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-24 23:25:55.136  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f353d99: startup date [Tue Apr 24 23:25:48 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1e66f1f5
+2018-04-24 23:25:55.255  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mch_info/select]}" onto public java.lang.String org.xxpay.service.controller.MchInfoServiceController.selectMchInfo(java.lang.String)
+2018-04-24 23:25:55.259  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/aliPayNotifyRes.htm]}" onto public void org.xxpay.service.controller.Notify4AliPayController.aliPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 23:25:55.261  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/wxPayNotifyRes.htm]}" onto public java.lang.String org.xxpay.service.controller.Notify4WxPayController.wxPayNotifyRes(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-04-24 23:25:55.262  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_pc]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayPcReq(java.lang.String)
+2018-04-24 23:25:55.263  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_mobile]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayMobileReq(java.lang.String)
+2018-04-24 23:25:55.264  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_qr]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayQrReq(java.lang.String)
+2018-04-24 23:25:55.265  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/ali_wap]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4AlipayController.doAliPayWapReq(java.lang.String)
+2018-04-24 23:25:55.265  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/channel/wx]}" onto public java.lang.String org.xxpay.service.controller.PayChannel4WxController.doWxPayReq(java.lang.String)
+2018-04-24 23:25:55.268  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay_channel/select]}" onto public java.lang.String org.xxpay.service.controller.PayChannelServiceController.selectPayChannel(java.lang.String)
+2018-04-24 23:25:55.271  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/create]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.createPayOrder(java.lang.String)
+2018-04-24 23:25:55.275  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/query]}" onto public java.lang.String org.xxpay.service.controller.PayOrderServiceController.queryPayOrder(java.lang.String)
+2018-04-24 23:25:55.278  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-24 23:25:55.284  INFO 29353 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-24 23:25:55.356  INFO 29353 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 23:25:55.357  INFO 29353 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 23:25:55.420  INFO 29353 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 23:25:56.082  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-04-24 23:25:56.093  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-04-24 23:25:56.174  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-24 23:25:56.176  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-24 23:25:56.193  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-24 23:25:56.196  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-24 23:25:56.197  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-24 23:25:56.203  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-24 23:25:56.233  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-24 23:25:56.276  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7f353d99,type=ConfigurationPropertiesRebinder]
+2018-04-24 23:25:56.297  INFO 29353 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-24 23:25:56.701  INFO 29353 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-24 23:25:56.707  INFO 29353 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-24 23:25:56.723  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-24 23:25:56.730  INFO 29353 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-24 23:25:56.731  INFO 29353 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-24 23:25:56.731  INFO 29353 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-24 23:25:56.731  INFO 29353 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-24 23:25:56.836  INFO 29353 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-24 23:25:56.838  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-24 23:25:56.838  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-24 23:25:56.838  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-24 23:25:56.838  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-24 23:25:56.839  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-24 23:25:56.839  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-24 23:25:56.839  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-24 23:25:56.855  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-24 23:25:56.860  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-04-24 23:25:56.869  INFO 29353 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-24 23:25:56.875  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1524583556875 with initial instances count: 2
+2018-04-24 23:25:56.919  INFO 29353 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application xxpay-service with eureka with status UP
+2018-04-24 23:25:56.920  INFO 29353 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1524583556920, current=UP, previous=STARTING]
+2018-04-24 23:25:56.922  INFO 29353 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/192.168.0.104:xxpay-service:3000: registering service...
+2018-04-24 23:25:56.934  INFO 29353 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-04-24 23:25:57.010  INFO 29353 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_XXPAY-SERVICE/192.168.0.104:xxpay-service:3000 - registration status: 204
+2018-04-24 23:25:57.183  INFO 29353 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Successfully connected to tcp://127.0.0.1:61613?wireFormat.maxInactivityDuration=0
+2018-04-24 23:26:07.201  WARN 29353 --- [main] o.a.a.t.failover.FailoverTransport       : Transport (tcp://127.0.0.1:61613?wireFormat.maxInactivityDuration=0) failed , attempting to automatically reconnect: {}
+
+java.io.IOException: Wire format negotiation timeout: peer did not send his wire format.
+	at org.apache.activemq.transport.WireFormatNegotiator.oneway(WireFormatNegotiator.java:99) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.failover.FailoverTransport.oneway(FailoverTransport.java:668) ~[activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:68) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:86) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1388) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.ActiveMQConnection.ensureConnectionInfoSent(ActiveMQConnection.java:1478) [activemq-client-5.14.5.jar:5.14.5]
+	at org.apache.activemq.ActiveMQConnection.start(ActiveMQConnection.java:527) [activemq-client-5.14.5.jar:5.14.5]
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.startSharedConnection(AbstractJmsListeningContainer.java:450) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer.startSharedConnection(DefaultMessageListenerContainer.java:822) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.doStart(AbstractJmsListeningContainer.java:297) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.start(AbstractJmsListeningContainer.java:270) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer.start(DefaultMessageListenerContainer.java:598) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.config.JmsListenerEndpointRegistry.startIfNecessary(JmsListenerEndpointRegistry.java:243) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.jms.config.JmsListenerEndpointRegistry.start(JmsListenerEndpointRegistry.java:206) [spring-jms-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:175) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:50) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:348) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:151) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:114) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:880) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
+	at org.xxpay.XxPayServiceApplication.main(XxPayServiceApplication.java:19) [classes/:na]
+
+2018-04-24 23:27:24.671  WARN 29285 --- [ActiveMQ Task-2] o.a.a.t.failover.FailoverTransport       : Failed to connect to [tcp://127.0.0.1:61613?wireFormat.maxInactivityDuration=0] after: 10 attempt(s) continuing to retry.
+2018-04-24 23:27:57.480  WARN 29353 --- [ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport       : Failed to connect to [tcp://127.0.0.1:61613?wireFormat.maxInactivityDuration=0] after: 10 attempt(s) continuing to retry.
