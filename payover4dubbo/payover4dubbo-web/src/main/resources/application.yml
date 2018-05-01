@@ -1,0 +1,13 @@
+server:
+  port: 3020
+
+spring:
+  dubbo:
+    application:
+      name: payover4dubbo-web
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    scan: shop.payover.dubbo
+
+logging:
+  file: ./log/payover4dubbo-web.log

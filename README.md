@@ -1,24 +1,24 @@
->XxPay'官方技术交流群：206119456（加群暗号：xxpay交流）。
+>Payover'官方技术交流群：206119456（加群暗号：Payover交流）。
 
->XxPay'官方资源交流群：214196580（加群暗号：xxpay交流）。
+>Payover'官方资源交流群：214196580（加群暗号：Payover交流）。
 ***
 
 ### 项目介绍
 ***
 
-- `XxPay聚合支付` XxPay聚合支付使用Java开发，包括spring-cloud、dubbo、spring-boot三个架构版本，已接入微信、支付宝等主流支付渠道，可直接用于生产环境。
+- `Payover聚合支付` Payover聚合支付使用Java开发，包括spring-cloud、dubbo、spring-boot三个架构版本，已接入微信、支付宝等主流支付渠道，可直接用于生产环境。
 
 - 目前已经接入支付渠道：微信(公众号支付、扫码支付、APP支付、H5支付)、支付宝(电脑网站支付、手机网站支付、APP支付、当面付)；
 
-> [XxPay官网：http://www.xxpay.org](http://www.xxpay.org "xxpay官方网站")
+> [Payover官网：http://www.payover.shop](http://www.payover.shop "Payover官方网站")
 
-> [XxPay开发社区：http://pub.xxpay.org](http://pub.xxpay.org "xxpay开发社区")
+> [Payover开发社区：http://pub.payover.shop](http://pub.payover.shop "Payover开发社区")
 
-> [XxPay统一扫码支付体验：http://shop.xxpay.org/goods/openQrPay.html](http://shop.xxpay.org/goods/openQrPay.html "xxpay支付体验")
+> [Payover统一扫码支付体验：http://shop.payover.shop/goods/openQrPay.html](http://shop.payover.shop/goods/openQrPay.html "Payover支付体验")
 
-> [XxPay运营平台演示：http://mgr.xxpay.org](http://mgr.xxpay.org "xxpay运营平台")
+> [Payover运营平台演示：http://mgr.payover.shop](http://mgr.payover.shop "Payover运营平台")
 
-> [XxPay文档库：http://docs.xxpay.org](http://docs.xxpay.org "xxpay文档库")
+> [Payover文档库：http://docs.payover.shop](http://docs.payover.shop "Payover文档库")
 
 ### 版本更新
 ***
@@ -28,7 +28,7 @@
 V1.0.0 |2018-04-15 |在springboot版本中增加了rabbitMQ的支持，修复其他bug
 V1.0.0 |2018-04-09 |已完成spring cloud新版规划
 V1.0.0 |2017-11-25 |在dubbo版本增加了转账、退款接口；重构了商户通知；修复了已知Bug
-V1.0.0 |2017-10-24 |提交xxpay4spring-boot版本
+V1.0.0 |2017-10-24 |提交Payover4spring-boot版本
 V1.0.0 |2017-09-10 |完成dubbo架构，增加支付订单查询接口
 V1.0.0 |2017-08-25 |微信支付SDK更换为weixin-java-pay，增加微信H5支付，增加docker部署支持
 V1.0.0 |2017-08-23 |升级支付宝为最新接口
@@ -48,74 +48,74 @@ V1.0.0 |2017-08-11 |完成spring-cloud架构，集成微信、支付宝渠道
 ------------
 
 
-- 如何获取支付体验账号？关注官方公众号（搜索：XxPay），回复：测试账号。
-- 支付宝沙箱测试：[XxPay支付宝沙箱测试](http://docs.xxpay.org/docs/deploy/41 "XxPay支付宝沙箱测试")
+- 如何获取支付体验账号？关注官方公众号（搜索：Payover），回复：测试账号。
+- 支付宝沙箱测试：[Payover支付宝沙箱测试](http://docs.payover.shop/docs/deploy/41 "Payover支付宝沙箱测试")
 
-![体验XxPay支付流程，手机扫一扫可体验](https://git.oschina.net/uploads/images/2017/1009/112525_df5aac80_430718.png "XxPay支付体验")
+![体验Payover支付流程，手机扫一扫可体验](https://git.oschina.net/uploads/images/2017/1009/112525_df5aac80_430718.png "Payover支付体验")
 
 【运营平台截图】
 
-![输入图片说明](https://git.oschina.net/uploads/images/2017/0814/015506_5b5871eb_430718.png "Xxpay运营平台")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0814/015506_5b5871eb_430718.png "Payover运营平台")
 
-![输入图片说明](https://git.oschina.net/uploads/images/2017/0814/015531_b34e63aa_430718.png "Xxpay运营平台")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0814/015531_b34e63aa_430718.png "Payover运营平台")
 
 ### 项目结构
 ***
 ```
-xxpay-master
-├── xxpay4dubbo -- spring-boot-dubbo架构实现
-|    ├── xxpay4dubbo-api -- 接口定义
-|    ├── xxpay4dubbo-service -- 服务生产者
-|    ├── xxpay4dubbo-web -- 服务消费者
-├── xxpay4spring-cloud -- spring-cloud架构实现
-|    ├── xxpay-config -- 配置中心
-|    ├── xxpay-gateway -- API网关
-|    ├── xxpay-server -- 服务注册中心
-|    ├── xxpay-service -- 服务生产者
-|    └── xxpay-web -- 服务消费者
-├── xxpay4spring-mvc -- spring-mvc架构实现
-├── xxpay-common -- 公共模块
-├── xxpay-dal -- 数据持久层
-├── xxpay-mgr -- 运营管理平台
-├── xxpay-shop -- 演示商城
+Payover-master
+├── Payover4dubbo -- spring-boot-dubbo架构实现
+|    ├── Payover4dubbo-api -- 接口定义
+|    ├── Payover4dubbo-service -- 服务生产者
+|    ├── Payover4dubbo-web -- 服务消费者
+├── Payover4spring-cloud -- spring-cloud架构实现
+|    ├── Payover-config -- 配置中心
+|    ├── Payover-gateway -- API网关
+|    ├── Payover-server -- 服务注册中心
+|    ├── Payover-service -- 服务生产者
+|    └── Payover-web -- 服务消费者
+├── Payover4spring-mvc -- spring-mvc架构实现
+├── Payover-common -- 公共模块
+├── Payover-datalib -- 数据持久层
+├── Payover-manager -- 运营管理平台
+├── Payover-merchant -- 商户管理平台
 ```
 
-#### xxpay-master
+#### Payover-master
 | 项目  | 端口 | 描述
 |---|---|---
-|xxpay-common |  | 公共模块(常量、工具类等)，jar发布
-|xxpay-dal |  | 支付数据持久层，jar发布
-|xxpay-mgr | 8092 | 支付运营平台
-|xxpay-shop | 8081 | 支付商城演示系统
-|xxpay4spring-cloud |  | 支付中心spring-cloud架构实现
-|xxpay4dubbo |  | 支付中心spring-boot-dubbo架构实现
-|xxpay4spring-mvc |  | 支付中心spring-mvc架构实现
-#### xxpay4spring-cloud
+|Payover-common |  | 公共模块(常量、工具类等)，jar发布
+|Payover-dal |  | 支付数据持久层，jar发布
+|Payover-mgr | 8092 | 支付运营平台
+|Payover-shop | 8081 | 支付商城演示系统
+|Payover4spring-cloud |  | 支付中心spring-cloud架构实现
+|Payover4dubbo |  | 支付中心spring-boot-dubbo架构实现
+|Payover4spring-mvc |  | 支付中心spring-mvc架构实现
+#### Payover4spring-cloud
 | 项目  | 端口 | 描述
 |---|---|---
-|xxpay-config | 2020 | 支付服务配置中心
-|xxpay-gateway | 3020 | 支付服务API网关
-|xxpay-server | 2000 | 支付服务注册中心
-|xxpay-service | 3000 | 支付服务生产者
-|xxpay-web | 3010 | 支付服务消费者
+|Payover-config | 2020 | 支付服务配置中心
+|Payover-gateway | 3020 | 支付服务API网关
+|Payover-server | 2000 | 支付服务注册中心
+|Payover-service | 3000 | 支付服务生产者
+|Payover-web | 3010 | 支付服务消费者
 项目启动顺序：
 ```
-xxpay-server > xxpay-config > xxpay-service > xxpay-web > xxpay-gateway
+Payover-server > Payover-config > Payover-service > Payover-web > Payover-gateway
 ```
-#### xxpay4dubbo
+#### Payover4dubbo
 | 项目  | 端口 | 描述
 |---|---|---
-|xxpay4dubbo-api |  | API接口定义
-|xxpay4dubbo-service | 20880 | 支付服务生产者
-|xxpay4dubbo-web | 3020 | 支付服务消费者
+|Payover4dubbo-api |  | API接口定义
+|Payover4dubbo-service | 20880 | 支付服务生产者
+|Payover4dubbo-web | 3020 | 支付服务消费者
 项目启动顺序：
 ```
-xxpay4dubbo-service > xxpay4dubbo-web
+Payover4dubbo-service > Payover4dubbo-web
 ```
 ### 项目部署
 ***
 
-项目部署文档：[XxPay项目部署](http://docs.xxpay.org/docs/deploy "xxpay部署")
+项目部署文档：[Payover项目部署](http://docs.payover.shop/docs/deploy "Payover部署")
 
 作者已成功将项目部署在阿里云主机上，服务器配置为：
 
@@ -133,6 +133,6 @@ xxpay4dubbo-service > xxpay4dubbo-web
 
 ### 关于我们
 ***
-微信扫描下面二维码，关注官方公众号：XxPay，获取更多精彩内容。
+微信扫描下面二维码，关注官方公众号：Payover，获取更多精彩内容。
 
-![XxPay聚合支付公众号](http://docs.xxpay.org/uploads/201708/attach_14dc8f1fac0a36a1.jpg "XxPay公众号")
+![Payover聚合支付公众号](http://docs.payover.shop/uploads/201708/attach_14dc8f1fac0a36a1.jpg "Payover公众号")

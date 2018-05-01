@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="shop.payover.datalib.dao.mapper.PermissionMapper" >
+  <resultMap id="BaseResultMap" type="shop.payover.datalib.dao.model.Permission" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="access_type" property="access_type" jdbcType="VARCHAR" />
+    <result column="access_value" property="access_value" jdbcType="VARCHAR" />
+    <result column="is_open" property="is_open" jdbcType="CHAR" />
+    <result column="data_range_ctl" property="data_range_ctl" jdbcType="CHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, name, access_type, access_value, is_open, data_range_ctl
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="shop.payover.datalib.dao.model.PermissionExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_permission
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null" >
+      <if test="offset != null" >
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null" >
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_permission
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectByRoleId" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from t_permission p left t_role_permission rp on rp.permission_id = p.id
+    where rp.role_id = #{roleId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from t_permission
+    <if test="limit != null" >
+      <if test="offset != null" >
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null" >
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_permission
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="shop.payover.datalib.dao.model.PermissionExample" >
+    delete from t_permission
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="shop.payover.datalib.dao.model.Permission" >
+    insert into t_permission (id, name, access_type, 
+      access_value, is_open, data_range_ctl
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{access_type,jdbcType=VARCHAR}, 
+      #{access_value,jdbcType=VARCHAR}, #{is_open,jdbcType=CHAR}, #{data_range_ctl,jdbcType=CHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="shop.payover.datalib.dao.model.Permission" >
+    insert into t_permission
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="access_type != null" >
+        access_type,
+      </if>
+      <if test="access_value != null" >
+        access_value,
+      </if>
+      <if test="is_open != null" >
+        is_open,
+      </if>
+      <if test="data_range_ctl != null" >
+        data_range_ctl,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="access_type != null" >
+        #{access_type,jdbcType=VARCHAR},
+      </if>
+      <if test="access_value != null" >
+        #{access_value,jdbcType=VARCHAR},
+      </if>
+      <if test="is_open != null" >
+        #{is_open,jdbcType=CHAR},
+      </if>
+      <if test="data_range_ctl != null" >
+        #{data_range_ctl,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="shop.payover.datalib.dao.model.PermissionExample" resultType="java.lang.Integer" >
+    select count(*) from t_permission
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update t_permission
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null" >
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.access_type != null" >
+        access_type = #{record.access_type,jdbcType=VARCHAR},
+      </if>
+      <if test="record.access_value != null" >
+        access_value = #{record.access_value,jdbcType=VARCHAR},
+      </if>
+      <if test="record.is_open != null" >
+        is_open = #{record.is_open,jdbcType=CHAR},
+      </if>
+      <if test="record.data_range_ctl != null" >
+        data_range_ctl = #{record.data_range_ctl,jdbcType=CHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update t_permission
+    set id = #{record.id,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      access_type = #{record.access_type,jdbcType=VARCHAR},
+      access_value = #{record.access_value,jdbcType=VARCHAR},
+      is_open = #{record.is_open,jdbcType=CHAR},
+      data_range_ctl = #{record.data_range_ctl,jdbcType=CHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="shop.payover.datalib.dao.model.Permission" >
+    update t_permission
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="access_type != null" >
+        access_type = #{access_type,jdbcType=VARCHAR},
+      </if>
+      <if test="access_value != null" >
+        access_value = #{access_value,jdbcType=VARCHAR},
+      </if>
+      <if test="is_open != null" >
+        is_open = #{is_open,jdbcType=CHAR},
+      </if>
+      <if test="data_range_ctl != null" >
+        data_range_ctl = #{data_range_ctl,jdbcType=CHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="shop.payover.datalib.dao.model.Permission" >
+    update t_permission
+    set name = #{name,jdbcType=VARCHAR},
+      access_type = #{access_type,jdbcType=VARCHAR},
+      access_value = #{access_value,jdbcType=VARCHAR},
+      is_open = #{is_open,jdbcType=CHAR},
+      data_range_ctl = #{data_range_ctl,jdbcType=CHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -3,21 +3,21 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.xxpay</groupId>
-  <artifactId>xxpay-master</artifactId>
+  <groupId>shop.payover</groupId>
+  <artifactId>payover-master</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
-  <name>xxpay-master</name>
-  <description>xxpay-master</description>
+  <name>payover-master</name>
+  <description>payover-master</description>
 
   <modules>
-    <module>xxpay-common</module>
-    <module>xxpay-dal</module>
-    <module>xxpay-mgr</module>
-    <module>xxpay-shop</module>
-    <module>xxpay4spring-cloud</module>
-    <module>xxpay4dubbo</module>
-    <module>xxpay4spring-boot</module>
+    <module>payover-common</module>
+    <module>payover-datalib</module>
+    <module>payover-manager</module>
+    <module>payover-merchant</module>
+    <module>payover4spring-cloud</module>
+    <module>payover4dubbo</module>
+    <module>payover4spring-boot</module>
   </modules>
 
   <properties>

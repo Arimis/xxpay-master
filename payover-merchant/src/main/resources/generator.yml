@@ -1,0 +1,7 @@
+generator:
+    jdbc:
+        driver: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/xxpaydb?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+        username: xxpay
+        password: xxpay
+classPathEntry: /Users/dingzhiwei/java/repository/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar
